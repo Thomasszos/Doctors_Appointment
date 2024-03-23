@@ -1,1 +1,0 @@
-Holds the "main" class, where our program is launched from.
