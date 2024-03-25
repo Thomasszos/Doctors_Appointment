@@ -1,4 +1,5 @@
 package viewmodel;
 
-public class viewModel {
+public class ViewModel {
+
 }
