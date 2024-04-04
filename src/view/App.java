@@ -11,9 +11,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import model.FirebaseConnect;
+import viewmodel.ViewModel;
 
 public class App extends Application {
     public static Firestore fs;
+    public static Stage mainStage;
 
 
     @Override
@@ -24,11 +26,11 @@ public class App extends Application {
         // loads the main window
         FXMLLoader fxmlL = new FXMLLoader();
         Scene win = new Scene(fxmlL.load(App.class.getResourceAsStream("/Main-Win.fxml")),677,535);
-        stage.setTitle("RX MED APP");
-        stage.setScene(win);
-        stage.setResizable(false);
-        stage.show();
-
+        this.mainStage = new Stage();
+        this.mainStage.setTitle("RX MED APP");
+        this.mainStage.setScene(win);
+        this.mainStage.setResizable(false);
+        this.mainStage.show();
 
     }
 

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.PatientLogInController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="63.0" layoutY="25.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="348.0" layoutY="37.0" text="Patient Sign In" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="35.0" text="RxMed">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="55.0" fitWidth="58.0" layoutX="528.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <!--<Image url="@../../../../../../360_F_169764523_7ysH07dmxLZmN0yHcZFWwrFXrxWckEMh.jpg" />-->
+         </image>
+      </ImageView>
+      <ImageView fitHeight="312.0" fitWidth="319.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <!--<Image url="@../../../../../../iStock-498397517-physician-patient%20relationship_0.jpg" />-->
+         </image>
+      </ImageView>
+      <Label layoutX="477.0" layoutY="348.0" text="RxMed">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="282.0" layoutY="190.0" text="Password:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="277.0" layoutY="149.0" text="Email login:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inp_patient_password" layoutX="363.0" layoutY="188.0" />
+      <TextField fx:id="inp_patient_email" layoutX="363.0" layoutY="147.0" />
+      <Button fx:id="btn_patient_login" alignment="CENTER" layoutX="271.0" layoutY="244.0" mnemonicParsing="false" onAction="#btn_patient_login_clicked" prefHeight="34.0" prefWidth="89.0" text="Login" />
+      <Button fx:id="btn_patient_create" alignment="CENTER" layoutX="427.0" layoutY="244.0" mnemonicParsing="false" onAction="#btn_patient_create_clicked" prefHeight="34.0" prefWidth="106.0" text="Create Account" />
+      <Button fx:id="btn_patient_forgot" alignment="CENTER" layoutX="328.0" layoutY="288.0" mnemonicParsing="false" onAction="#btn_patient_forgot_clicked" prefHeight="34.0" prefWidth="149.0" text="Forgot Login/Password" />
+   </children>
+</AnchorPane>
