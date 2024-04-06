@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325uidoctor.DoctorMenu">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <MenuBar prefHeight="25.0" prefWidth="600.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <Label layoutX="215.0" layoutY="25.0" text="Current Patients:">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="208.0" layoutY="191.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="115.0" layoutX="27.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" width="555.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="115.0" layoutX="28.0" layoutY="236.0" stroke="BLACK" strokeType="INSIDE" width="555.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="25.0" layoutX="28.0" layoutY="236.0" stroke="BLACK" strokeType="INSIDE" width="555.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="25.0" layoutX="27.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" width="555.0" />
+            <GridPane layoutX="28.0" layoutY="236.0" prefHeight="25.0" prefWidth="555.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane layoutX="35.0" layoutY="236.0" prefHeight="115.0" prefWidth="548.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="307.0" minWidth="10.0" prefWidth="171.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="473.0" minWidth="10.0" prefWidth="167.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="473.0" minWidth="10.0" prefWidth="218.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Ashley Rodriguez" GridPane.rowIndex="1" />
+                  <Label text="Brian Thompson" GridPane.rowIndex="2" />
+                  <Label text="Michelle Lee" GridPane.rowIndex="3" />
+                  <Label text="James Harris" GridPane.rowIndex="4" />
+                  <Label text="Fever" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="Headache" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="Nausea" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="Fatigue" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label text="April 8, 2024" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label text="April 15, 2024" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Label text="April 21, 2024" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Label text="April 28, 2024" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Label text="Patient Name:" />
+                  <Label text="Pre-Diagnosis:" GridPane.columnIndex="1" />
+                  <Label text="Date Of Appointment:" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="31.0" layoutY="68.0" prefHeight="115.0" prefWidth="548.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="307.0" minWidth="10.0" prefWidth="171.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="473.0" minWidth="10.0" prefWidth="186.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="473.0" minWidth="10.0" prefWidth="194.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Emily Johnson" GridPane.rowIndex="1" />
+                  <Label text="Michael Smith" GridPane.rowIndex="2" />
+                  <Label text="Lisa Brown" GridPane.rowIndex="3" />
+                  <Label text="David Wilson" GridPane.rowIndex="4" />
+                  <Label text="emily.johnson@example.com" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="michael.smith@example.com" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="lisa.brown@example.com" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="david.wilson@example.com" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label text="August 15, 2024" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label text="October 3, 2024" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Label text="September 22, 2024" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Label text="November 7, 2024" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Label text="Patient Name:" />
+                  <Label text="Patient Email:" GridPane.columnIndex="1" />
+                  <Label text="Next Appointment Date:" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+            <Rectangle arcHeight="3.0" arcWidth="5.0" fill="RED" height="5.0" layoutX="230.0" layoutY="225.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="140.0" />
+            <ImageView fitHeight="36.0" fitWidth="43.0" layoutX="561.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../360_F_169764523_7ysH07dmxLZmN0yHcZFWwrFXrxWckEMh.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="524.0" layoutY="368.0" text="RxMed" />
+            <Button layoutX="227.0" layoutY="364.0" mnemonicParsing="false" text="Scedule an Appointment" />
+            <Rectangle arcHeight="3.0" arcWidth="5.0" fill="RED" height="5.0" layoutX="220.0" layoutY="59.0" opacity="0.6" stroke="BLACK" strokeType="INSIDE" width="170.0" />
+            <Label layoutX="225.0" layoutY="191.0" text="Consultations">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

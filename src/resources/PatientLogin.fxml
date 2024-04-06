@@ -11,6 +11,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
+<?import javafx.scene.image.Image?>
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.PatientLogInController">
    <children>
       <MenuBar prefHeight="25.0" prefWidth="600.0">
@@ -50,7 +51,7 @@
       </ImageView>
       <ImageView fitHeight="312.0" fitWidth="319.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <!--<Image url="@../../../../../../iStock-498397517-physician-patient%20relationship_0.jpg" />-->
+            <Image url="@iStock-498397517-physician-patient relationship_0.jpg" />
          </image>
       </ImageView>
       <Label layoutX="477.0" layoutY="348.0" text="RxMed">
