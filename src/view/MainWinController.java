@@ -36,7 +36,8 @@ public class MainWinController {
 
     @FXML
     void btn_doctor_lgin_btn(ActionEvent event) throws ExecutionException, InterruptedException, IOException {
-        Scene d = new Scene(new FXMLLoader().load(App.class.getResourceAsStream("/DoctorCreation.fxml")),677,461);
+        App.mainStage.hide();
+        Scene d = new Scene(new FXMLLoader().load(App.class.getResourceAsStream("/DoctorLogin.fxml")),600,400);
         Stage nwin = new Stage();
         nwin.setTitle("RX MED APP");
         nwin.setScene(d);

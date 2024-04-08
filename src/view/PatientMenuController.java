@@ -10,6 +10,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import model.Appointments;
+import viewmodel.AppointmentViewModel;
 
 import java.net.URL;
 import java.util.List;
@@ -47,7 +48,7 @@ public class PatientMenuController {
         tbl_patient_appointment.refresh();
 
         //asynchronously retrieve all documents
-        ApiFuture<QuerySnapshot> future =  App.fs.collection("appointments").whereEqualTo("appt_patient","g80DEJpdNeuO1Lr4GxU1").get();
+        ApiFuture<QuerySnapshot> future =  App.fs.collection("appointments").whereEqualTo("appt_patient",App.currentLogIn).get();
         // future.get() blocks on response
         List<QueryDocumentSnapshot> documents;
         try{
@@ -60,6 +61,7 @@ public class PatientMenuController {
             TableColumn<Appointments,String> tcol = new TableColumn<>("APPOINTMENT DATE");
             tcol.setCellValueFactory(new PropertyValueFactory<>("appointmentDate"));
 
+
             tbl_patient_appointment.getColumns().add(fcol);
             tbl_patient_appointment.getColumns().add(scol);
             tbl_patient_appointment.getColumns().add(tcol);
@@ -69,13 +71,9 @@ public class PatientMenuController {
             if(documents.size() > 0) {
                 for (QueryDocumentSnapshot document : documents)
                 {
-
                     String doctor = getDoctor(document.get("acct_id").toString());
-                    //.whereEqualTo("appt_patient","g80DEJpdNeuO1Lr4GxU1").get();
-                    //ApiFuture<QuerySnapshot> futureDoctor = App.fs.collection("accounts").whereEqualTo("acct_id",document.get("acct_id")).get();  //App.fs.collection("accounts").whereEqualTo("acc",document.get("acct_id").toString()).get();
                     Appointments appt  = new Appointments(document.getId().toString(),doctor,document.get("appt_date").toString());
                     tbl_patient_appointment.getItems().add(appt);
-                    //docIds.add(document.getId());
                 }
             }
 

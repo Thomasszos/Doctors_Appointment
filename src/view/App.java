@@ -16,6 +16,7 @@ import viewmodel.ViewModel;
 public class App extends Application {
     public static Firestore fs;
     public static Stage mainStage;
+    public static String currentLogIn;
 
 
     @Override

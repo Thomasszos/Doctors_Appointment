@@ -6,12 +6,12 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<?import javafx.scene.image.Image?>
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.PatientLogInController">
    <children>
       <MenuBar prefHeight="25.0" prefWidth="600.0">
@@ -71,8 +71,7 @@
       </Label>
       <TextField fx:id="inp_patient_password" layoutX="363.0" layoutY="188.0" />
       <TextField fx:id="inp_patient_email" layoutX="363.0" layoutY="147.0" />
-      <Button fx:id="btn_patient_login" alignment="CENTER" layoutX="271.0" layoutY="244.0" mnemonicParsing="false" onAction="#btn_patient_login_clicked" prefHeight="34.0" prefWidth="89.0" text="Login" />
-      <Button fx:id="btn_patient_create" alignment="CENTER" layoutX="427.0" layoutY="244.0" mnemonicParsing="false" onAction="#btn_patient_create_clicked" prefHeight="34.0" prefWidth="106.0" text="Create Account" />
-      <Button fx:id="btn_patient_forgot" alignment="CENTER" layoutX="328.0" layoutY="288.0" mnemonicParsing="false" onAction="#btn_patient_forgot_clicked" prefHeight="34.0" prefWidth="149.0" text="Forgot Login/Password" />
+      <Button fx:id="btn_patient_login" alignment="CENTER" layoutX="304.0" layoutY="244.0" mnemonicParsing="false" onAction="#btn_patient_login_clicked" prefHeight="34.0" prefWidth="89.0" text="Login" />
+      <Button fx:id="btn_patient_create" alignment="CENTER" layoutX="418.0" layoutY="244.0" mnemonicParsing="false" onAction="#btn_patient_create_clicked" prefHeight="34.0" prefWidth="106.0" text="Create Account" />
    </children>
 </AnchorPane>

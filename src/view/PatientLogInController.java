@@ -41,12 +41,19 @@ public class PatientLogInController {
     private TextField inp_patient_password;
 
     @FXML
-    void btn_patient_create_clicked(ActionEvent event) {
-
+    void btn_patient_create_clicked(ActionEvent event) throws IOException {
+        Scene d = new Scene(new FXMLLoader().load(App.class.getResourceAsStream("/PatientCreation.fxml")),677,494);
+        Stage nwin = new Stage();
+        nwin.setTitle("RX MED APP");
+        nwin.setScene(d);
+        nwin.setResizable(false);
+        nwin.show();
     }
 
     @FXML
     void btn_patient_forgot_clicked(ActionEvent event) {
+
+
 
     }
 
@@ -57,6 +64,7 @@ public class PatientLogInController {
                 .whereEqualTo("acct_pass",inp_patient_password.getText().toString());
         ApiFuture<QuerySnapshot> results = logInQ.get();
         if(results.get().getDocuments().size() >0) {
+            App.currentLogIn = results.get().getDocuments().get(0).getId().toString();
             App.mainStage.hide();
             Scene d = new Scene(new FXMLLoader().load(App.class.getResourceAsStream("/PatientMenu.fxml")),600,494);
             Stage nwin = new Stage();

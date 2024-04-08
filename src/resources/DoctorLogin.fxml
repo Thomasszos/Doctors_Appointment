@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.TextField?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.DoctorLoginController">
    <children>
       <MenuBar prefHeight="25.0" prefWidth="600.0">
         <menus>
@@ -46,12 +44,11 @@
          </font>
       </Label>
       <ImageView fitHeight="336.0" fitWidth="298.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../../purepng.com-doctorsdoctorsdoctors-and-nursesa-qualified-practitioner-of-medicine-aclinicianmedical-practitionermale-doctor-1421526856715fcree.png" />
-         </image>
+<!--         <image>-->
+<!--            <Image url="@../../../../../../purepng.com-doctorsdoctorsdoctors-and-nursesa-qualified-practitioner-of-medicine-aclinicianmedical-practitionermale-doctor-1421526856715fcree.png" />-->
+<!--         </image>-->
       </ImageView>
-      <TextField layoutX="437.0" layoutY="132.0" />
-      <TextField layoutX="437.0" layoutY="227.0" />
+      <TextField fx:id="inp_doctor_login_email" layoutX="437.0" layoutY="132.0" />
       <Label layoutX="332.0" layoutY="183.0" text="Password:">
          <font>
             <Font size="15.0" />
@@ -62,23 +59,18 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField layoutX="437.0" layoutY="181.0" />
-      <Label layoutX="307.0" layoutY="229.0" text="Authorization Key:">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Label>
+      <TextField fx:id="inp_doctor_login_password" layoutX="437.0" layoutY="181.0" />
       <ImageView fitHeight="62.0" fitWidth="54.0" layoutX="532.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../../360_F_169764523_7ysH07dmxLZmN0yHcZFWwrFXrxWckEMh.jpg" />
-         </image>
+<!--         <image>-->
+<!--            <Image url="@../../../../../../360_F_169764523_7ysH07dmxLZmN0yHcZFWwrFXrxWckEMh.jpg" />-->
+<!--         </image>-->
       </ImageView>
       <Label layoutX="483.0" layoutY="349.0" prefHeight="25.0" prefWidth="48.0" text="RxMed">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Button layoutX="313.0" layoutY="280.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="108.0" text="Login" />
-      <Button layoutX="440.0" layoutY="280.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="143.0" text="Forgot Login/Password" />
+      <Button fx:id="btn_doctor_login" layoutX="316.0" layoutY="233.0" mnemonicParsing="false" onAction="#btn_doctor_login_clicked" prefHeight="31.0" prefWidth="108.0" text="Login" />
+      <Button layoutX="443.0" layoutY="233.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="143.0" text="Forgot Login/Password" />
    </children>
 </AnchorPane>

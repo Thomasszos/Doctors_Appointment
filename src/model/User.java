@@ -11,6 +11,9 @@ public class User {
     private String userId;
     private String userName;
 
+    private String userFirst;
+    private String userLast;
+
 
     // CONSTRUCTOR
     public User(String id,String un) {
