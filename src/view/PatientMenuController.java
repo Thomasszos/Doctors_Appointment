@@ -97,4 +97,20 @@ public class PatientMenuController {
         };
       return result;
     };
+
+//    public String[] getPatientInfo(String pid) throws ExecutionException, InterruptedException {
+//        String[] result = {"","","",""};
+//        ApiFuture<QuerySnapshot> futurePatient =  App.fs.collection("accounts").get();
+//        List<QueryDocumentSnapshot> documentPatient = futurePatient.get().getDocuments();
+//        for (QueryDocumentSnapshot d: documentPatient) {
+//            if(d.getId().toString().equals(pid)) {
+//                result[0] = d.getId().toString();
+//                result[1] = d.get("acct_first").toString();
+//                result[2] = d.get("acct_last").toString();
+//                result[3] = d.get("acct_email").toString();
+//                break;
+//            };
+//        };
+//        return  result;
+//    }
 }
