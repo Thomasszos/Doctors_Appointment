@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<!-- fx:controller="com.example.csc325uidoctor.HelloController" -->
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="677.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainWinController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1616" height="509.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="677.0" />
+      <Circle fill="WHITE" layoutX="382.0" layoutY="84.0" radius="397.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Button fx:id="btn_doctor_lgin" layoutX="38.0" layoutY="469.0" mnemonicParsing="false" onAction="#btn_doctor_lgin_btn" prefHeight="37.0" prefWidth="102.0" text="Doctor Sign in" />
+      <Button fx:id="btn_patient_lgin" layoutX="298.0" layoutY="307.0" mnemonicParsing="false" onAction="#btn_patient_lgin_clicked" prefHeight="54.0" prefWidth="156.0" text="Patient Sign in">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="259.0" layoutY="382.0" prefHeight="17.0" prefWidth="117.0" text="New to the Program?" />
+      <Label layoutX="382.0" layoutY="375.0" prefHeight="28.0" prefWidth="77.0" text="Sign Up!" textFill="#3131e8">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="514.0" prefHeight="17.0" prefWidth="102.0" text="Doctor sign-up " textFill="WHITE" />
+      <Label layoutX="130.0" layoutY="514.0" prefHeight="17.0" prefWidth="39.0" text="Here!" textFill="#3131e8" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="148.0" layoutX="103.0" layoutY="116.0" stroke="BLACK" strokeType="INSIDE" width="156.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eb2828" height="28.0" layoutX="103.0" layoutY="116.0" stroke="BLACK" strokeType="INSIDE" width="156.0" />
+      <Label layoutX="156.0" layoutY="150.0" prefHeight="80.0" prefWidth="77.0" text="1">
+         <font>
+            <Font name="Ebrima Bold" size="72.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eb2828" height="17.0" layoutX="289.0" layoutY="156.0" opacity="0.93" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="188.0" />
+      <Label layoutX="297.0" layoutY="104.0" prefHeight="80.0" prefWidth="181.0" text="RxMed">
+         <font>
+            <Font size="54.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eb2828" height="17.0" layoutX="289.0" layoutY="237.0" opacity="0.93" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="347.0" />
+      <Label layoutX="293.0" layoutY="184.0" text="Appointments">
+         <font>
+            <Font size="54.0" />
+         </font>
+      </Label>
+      <MenuBar prefHeight="25.0" prefWidth="677.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</Pane>

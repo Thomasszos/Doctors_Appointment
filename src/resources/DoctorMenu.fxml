@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="887.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.DoctorMenuController">
+   <children>
+      <Label layoutX="37.0" layoutY="33.0" text="YOUR PATIENTS">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tbl_current_patients" layoutX="37.0" layoutY="69.0" prefHeight="220.0" prefWidth="593.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Label layoutX="37.0" layoutY="318.0" text="CONSULTATIONS">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tbl_current_consultations" layoutX="37.0" layoutY="345.0" prefHeight="220.0" prefWidth="593.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
+      </TableView><!-- onAction="#btn_doctor_add_patients_clicked"        #btn_doctor_add_appointment_clicked -->
+      <Button fx:id="btn_doctor_add_patients" layoutX="658.0" layoutY="69.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="194.0" text="ADD A PATIENT" />
+      <Button fx:id="btn_doctor_add_appointment" layoutX="658.0" layoutY="125.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="194.0" text="CREATE AN APPOINTMENT" />
+   </children>
+</Pane>
