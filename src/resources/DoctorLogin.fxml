@@ -6,6 +6,7 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
@@ -44,10 +45,9 @@
          </font>
       </Label>
       <ImageView fitHeight="336.0" fitWidth="298.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
-<!--         <image>-->
-<!--            <Image url="@../../../../../../purepng.com-doctorsdoctorsdoctors-and-nursesa-qualified-practitioner-of-medicine-aclinicianmedical-practitionermale-doctor-1421526856715fcree.png" />-->
-<!--         </image>-->
-      </ImageView>
+         <image>
+            <Image url="@fordoctor.jpg" />
+         </image></ImageView>
       <TextField fx:id="inp_doctor_login_email" layoutX="437.0" layoutY="132.0" />
       <Label layoutX="332.0" layoutY="183.0" text="Password:">
          <font>
@@ -61,9 +61,9 @@
       </Label>
       <TextField fx:id="inp_doctor_login_password" layoutX="437.0" layoutY="181.0" />
       <ImageView fitHeight="62.0" fitWidth="54.0" layoutX="532.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true">
-<!--         <image>-->
-<!--            <Image url="@../../../../../../360_F_169764523_7ysH07dmxLZmN0yHcZFWwrFXrxWckEMh.jpg" />-->
-<!--         </image>-->
+         <image>
+            <Image url="@logo.jpg" />
+         </image>
       </ImageView>
       <Label layoutX="483.0" layoutY="349.0" prefHeight="25.0" prefWidth="48.0" text="RxMed">
          <font>
