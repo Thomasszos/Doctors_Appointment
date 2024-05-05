@@ -14,7 +14,7 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <TableView fx:id="tbl_current_patients" layoutX="37.0" layoutY="69.0" prefHeight="220.0" prefWidth="593.0">
+      <TableView fx:id="tbl_current_patients" layoutX="37.0" layoutY="69.0" onKeyPressed="#tbl_current_patients_pressed" prefHeight="220.0" prefWidth="593.0">
         <columns>
           <TableColumn prefWidth="75.0" text="C1" />
           <TableColumn prefWidth="75.0" text="C2" />
@@ -25,13 +25,14 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <TableView fx:id="tbl_current_consultations" layoutX="37.0" layoutY="345.0" prefHeight="220.0" prefWidth="593.0">
+      <TableView fx:id="tbl_current_consultations" layoutX="37.0" layoutY="345.0" onKeyPressed="#tbl_current_consultations_pressed" prefHeight="220.0" prefWidth="593.0">
          <columns>
             <TableColumn prefWidth="75.0" text="C1" />
             <TableColumn prefWidth="75.0" text="C2" />
          </columns>
       </TableView><!-- onAction="#btn_doctor_add_patients_clicked"        #btn_doctor_add_appointment_clicked -->
-      <Button fx:id="btn_doctor_add_patients" layoutX="658.0" layoutY="69.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="194.0" text="ADD A PATIENT" />
-      <Button fx:id="btn_doctor_add_appointment" layoutX="658.0" layoutY="125.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="194.0" text="CREATE AN APPOINTMENT" />
+      <Button fx:id="btn_doctor_add_patients" layoutX="658.0" layoutY="69.0" mnemonicParsing="false" onAction="#btn_doctor_add_patients_clicked" prefHeight="34.0" prefWidth="194.0" text="ADD A PATIENT" />
+      <Button fx:id="btn_doctor_add_appointment" layoutX="658.0" layoutY="125.0" mnemonicParsing="false" onAction="#btn_doctor_add_appointment_clicked" prefHeight="34.0" prefWidth="194.0" text="CREATE AN APPOINTMENT" />
+      <Button fx:id="btn_doctor_refresh_appointment" layoutX="658.0" layoutY="179.0" mnemonicParsing="false" onAction="#btn_doctor_refresh_appointment_clicked" prefHeight="34.0" prefWidth="194.0" text="REFRESH " />
    </children>
 </Pane>

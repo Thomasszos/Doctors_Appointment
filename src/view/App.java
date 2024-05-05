@@ -11,7 +11,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import model.FirebaseConnect;
-import viewmodel.ViewModel;
 
 public class App extends Application {
     public static Firestore fs;

@@ -46,12 +46,12 @@
       </Label>
       <ImageView fitHeight="55.0" fitWidth="58.0" layoutX="528.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <!--<Image url="@../../../../../../360_F_169764523_7ysH07dmxLZmN0yHcZFWwrFXrxWckEMh.jpg" />-->
+            <Image url="@logo.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="312.0" fitWidth="319.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@iStock-498397517-physician-patient relationship_0.jpg" />
+            <Image url="@forpatient.jpg" />
          </image>
       </ImageView>
       <Label layoutX="477.0" layoutY="348.0" text="RxMed">
@@ -71,7 +71,6 @@
       </Label>
       <TextField fx:id="inp_patient_password" layoutX="363.0" layoutY="188.0" />
       <TextField fx:id="inp_patient_email" layoutX="363.0" layoutY="147.0" />
-      <Button fx:id="btn_patient_login" alignment="CENTER" layoutX="304.0" layoutY="244.0" mnemonicParsing="false" onAction="#btn_patient_login_clicked" prefHeight="34.0" prefWidth="89.0" text="Login" />
-      <Button fx:id="btn_patient_create" alignment="CENTER" layoutX="418.0" layoutY="244.0" mnemonicParsing="false" onAction="#btn_patient_create_clicked" prefHeight="34.0" prefWidth="106.0" text="Create Account" />
+      <Button fx:id="btn_patient_login" alignment="CENTER" layoutX="304.0" layoutY="244.0" mnemonicParsing="false" onAction="#btn_patient_login_clicked" prefHeight="34.0" prefWidth="234.0" text="Login" />
    </children>
 </AnchorPane>

@@ -33,6 +33,8 @@ public class DoctorLoginController {
     @FXML
     private TextField inp_doctor_login_password;
 
+    public static Stage doctorLoginStage;
+
     @FXML
     void btn_doctor_login_clicked(ActionEvent event) throws ExecutionException, InterruptedException, IOException {
         CollectionReference acc = App.fs.collection("accounts");
@@ -42,6 +44,8 @@ public class DoctorLoginController {
         if(results.get().getDocuments().size() >0) {
             App.currentLogIn = results.get().getDocuments().get(0).getId().toString();
             App.mainStage.hide();
+            doctorLoginStage = (Stage) inp_doctor_login_email.getScene().getWindow();
+            doctorLoginStage.hide();
             Scene d = new Scene(new FXMLLoader().load(App.class.getResourceAsStream("/DoctorMenu.fxml")),887,636);
             Stage nwin = new Stage();
             nwin.setTitle("RX MED APP");
@@ -58,6 +62,7 @@ public class DoctorLoginController {
         assert btn_doctor_login != null : "fx:id=\"btn_doctor_login\" was not injected: check your FXML file 'DoctorLogin.fxml'.";
         assert inp_doctor_login_email != null : "fx:id=\"inp_doctor_login_email\" was not injected: check your FXML file 'DoctorLogin.fxml'.";
         assert inp_doctor_login_password != null : "fx:id=\"inp_doctor_login_password\" was not injected: check your FXML file 'DoctorLogin.fxml'.";
+
 
     }
 }

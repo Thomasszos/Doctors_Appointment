@@ -4,6 +4,7 @@ public class Appointments {
     // properties
     private String appointmentId;
     private String appointmentDoctor;
+    private String appointmentPatient;
     private String appointmentDate;
 
     // constructor
@@ -13,6 +14,12 @@ public class Appointments {
         this.appointmentDate = appointmentDate;
     }
 
+    public Appointments(String appointmentId, String appointmentDoctor, String appointmentPatient ,String appointmentDate  ) {
+        this.appointmentId = appointmentId;
+        this.appointmentDoctor = appointmentDoctor;
+        this.appointmentDate = appointmentDate;
+        this.appointmentPatient = appointmentPatient;
+    }
 
     // methods
     public void setAppointmentId(String aid) {
@@ -27,6 +34,10 @@ public class Appointments {
         this.appointmentDate = adate;
     }
 
+    public void srtAppointmentPatient(String apat) {
+        this.appointmentPatient = apat;
+    }
+
     public String getAppointmentId() {
         return this.appointmentId;
     }
@@ -37,5 +48,9 @@ public class Appointments {
 
     public String getAppointmentDate() {
         return this.appointmentDate;
+    }
+
+    public String getAppointmentPatient() {
+        return this.appointmentPatient;
     }
 }

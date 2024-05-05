@@ -10,7 +10,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import model.Appointments;
-import viewmodel.AppointmentViewModel;
 
 import java.net.URL;
 import java.util.List;
@@ -32,15 +31,10 @@ public class PatientMenuController {
 
     @FXML
     void btn_patient_refresh_clicked(ActionEvent event) {
-        tbl_patient_appointment.getItems().clear();
-        tbl_patient_appointment.getColumns().clear();
-        tbl_patient_appointment.refresh();
+        refresh();
     }
 
-    @FXML
-    void initialize() {
-        assert btn_patient_refresh != null : "fx:id=\"btn_patient_refresh\" was not injected: check your FXML file 'PatientMenu.fxml'.";
-        assert tbl_patient_appointment != null : "fx:id=\"tbl_patient_appointment\" was not injected: check your FXML file 'PatientMenu.fxml'.";
+    public void refresh(){
 
         // clear everything inside the table
         tbl_patient_appointment.getItems().clear();
@@ -81,7 +75,14 @@ public class PatientMenuController {
             System.out.println(e.getMessage());
         }
 
+    }
 
+    @FXML
+    void initialize() {
+        assert btn_patient_refresh != null : "fx:id=\"btn_patient_refresh\" was not injected: check your FXML file 'PatientMenu.fxml'.";
+        assert tbl_patient_appointment != null : "fx:id=\"tbl_patient_appointment\" was not injected: check your FXML file 'PatientMenu.fxml'.";
+
+        refresh();
 
     }
 
